@@ -35,11 +35,11 @@ public class ClienteModel {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;	
 	
-	@Column(nullable = false, length= 150)	
+	@Column(nullable =true, length= 150)	
 	@NotEmpty(message= "{campo.nome.obrigatorio}")
 	private String nome;
 	
-	@Column(nullable = false, length= 150)
+	@Column(nullable = true, length= 150)
 	@NotNull	
 	private String telefone;
 	
